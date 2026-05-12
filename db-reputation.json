@@ -1,0 +1,77 @@
+{
+  "tutors": [
+    {
+      "id": 1,
+      "fullName": "Carlos Mendoza",
+      "university": "UNI",
+      "averageScore": 4.8,
+      "totalReviews": 2
+    },
+    {
+      "id": 2,
+      "fullName": "Lucia Fernandez",
+      "university": "UPC",
+      "averageScore": 5,
+      "totalReviews": 1
+    },
+    {
+      "id": 3,
+      "fullName": "Jorge Quispe",
+      "university": "UNMSM",
+      "averageScore": 3,
+      "totalReviews": 1
+    }
+  ],
+  "reviews": [
+    {
+      "id": 101,
+      "tutorId": 1,
+      "studentId": 501,
+      "sessionId": 10001,
+      "score": 5,
+      "comment": "Excelente explicación de integrales múltiples. Rompió los silos y lo entendí perfecto.",
+      "status": "PUBLISHED",
+      "createdAt": "2026-05-01T14:30:00Z"
+    },
+    {
+      "id": 102,
+      "tutorId": 1,
+      "studentId": 502,
+      "sessionId": 10005,
+      "score": 4.6,
+      "comment": "Muy paciente, me ayudó a prepararme para mi parcial de física.",
+      "status": "PUBLISHED",
+      "createdAt": "2026-05-03T09:15:00Z"
+    },
+    {
+      "id": 103,
+      "tutorId": 2,
+      "studentId": 503,
+      "sessionId": 10012,
+      "score": 5,
+      "comment": "Domina Angular a la perfección. La sesión por videollamada fue sin cortes.",
+      "status": "PUBLISHED",
+      "createdAt": "2026-05-05T18:45:00Z"
+    },
+    {
+      "id": 104,
+      "tutorId": 3,
+      "studentId": 501,
+      "sessionId": 10020,
+      "score": 3,
+      "comment": "El tutor sabía del tema, pero había mucho ruido en su entorno y fue difícil concentrarse.",
+      "status": "PUBLISHED",
+      "createdAt": "2026-05-06T11:20:00Z"
+    },
+    {
+      "id": 105,
+      "tutorId": 3,
+      "studentId": 504,
+      "sessionId": 10025,
+      "score": 1,
+      "comment": "Este comentario contiene lenguaje inapropiado y ataques personales.",
+      "status": "REMOVED",
+      "createdAt": "2026-05-07T16:00:00Z"
+    }
+  ]
+}

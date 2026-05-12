@@ -1,0 +1,41 @@
+@if (store.loading()) {
+  <mat-spinner diameter="40"></mat-spinner>
+}
+
+@if (store.error()) {
+  <mat-error>{{ store.error() }}</mat-error>
+}
+
+<div class="page-header">
+  <button mat-raised-button color="primary" (click)="router.navigate(['reputation/tutors/new'])">
+    + Nuevo Tutor
+  </button>
+</div>
+
+<div class="tutors-grid">
+  @for (tutor of store.tutors(); track tutor.id) {
+    <div class="custom-card">
+
+      <div class="card-header">
+        <div class="avatar-placeholder">{{ tutor.fullName.charAt(0) }}</div>
+        <div class="header-info">
+          <h3>{{ tutor.fullName }}</h3>
+          <p>{{ tutor.university }}</p>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="score-badge">
+          ⭐ {{ tutor.averageScore }} Estrellas
+        </div>
+        <div class="id-badge">ID: #{{ tutor.id }}</div>
+      </div>
+
+      <div class="card-footer">
+        <button mat-button color="primary" (click)="editTutor(tutor.id)">Editar</button>
+        <button mat-button color="warn" (click)="deleteTutor(tutor.id)">Eliminar</button>
+      </div>
+
+    </div>
+  }
+</div>
